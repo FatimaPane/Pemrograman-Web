@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penerimaan Mahasiswa Baru</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #95c0be; 
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        h3 {
+            color: #040e29;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        img {
+            margin: 10px;
+            border-radius: 10px;
+        }
+        form {
+            background-color: #ffffff; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        input[type="text"], input[type="number"], input[type="date"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        input[type="submit"], input[type="reset"], input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+            background-color: #45a049;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3><strong>Penerimaan Mahasiswa Baru</strong></h3>
+    <div class="logo-container">
+        <img src="unp.jpeg" alt="Logo UNP" width="200">
+        <img src="https://unp.ac.id/patch/images/800/88c55c3c3da3b19e7b7939feedaceb35.png" alt="Logo UNP" width="150">
+    </div>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td>No. Pendaftaran</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Nama Pendaftar</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="jk" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>
+                    <select name="Agama" id="Agama-select">
+                        <option value="">--Pilih Agama--</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen Protestan">Kristen Protestan</option>
+                        <option value="Kristen Katolik">Kristen Katolik</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Konghucu">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Asal SMA</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Jurusan SMA</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Rata-rata Nilai Raport</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Nama Ayah</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Nama Ibu</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Universitas Pilihan 1</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Universitas Pilihan 2</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Jurusan 1</td>
+                <td>
+                    <select name="Jurusan" id="jurusan-select">
+                        <option value="">--Jurusan yang tersedia--</option>
+                        <option value="Hukum">Hukum</option>
+                        <option value="PGSD">PGSD</option>
+                        <option value="Psikologi">Psikologi</option>
+                        <option value="Informatika">Informatika</option>
+                        <option value="Akuntansi">Akuntansi</option>
+                        <option value="Kedokteran">Kedokteran</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jurusan 2</td>
+                <td>
+                    <select name="Jurusan" id="jurusan-select">
+                        <option value="">--Jurusan yang tersedia--</option>
+                        <option value="Hukum">Hukum</option>
+                        <option value="PGSD">PGSD</option>
+                        <option value="Psikologi">Psikologi</option>
+                        <option value="Informatika">Informatika</option>
+                        <option value="Akuntansi">Akuntansi</option>
+                        <option value="Kedokteran">Kedokteran</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Fakultas yang Dipilih</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Prodi yang Dipilih</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Simpan">
+                    <input type="reset" value="Reset">
+                    <input type="button" value="Kembali">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
